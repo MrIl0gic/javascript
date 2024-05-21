@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+    body{ 
+        background-color: lightseagreen;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    div{
+        border: 1px solid black;
+        width: 200px;
+        text-align: center;
+        font-size: 2em;
+        line-height: 200px;
+        margin: auto;
+        color: white;
+        background-color: rgb(76, 126, 87);
+
+    }
+    body > p {
+        text-align: center;
+        color: wheat;
+        font-size: 1.3em;
+
+    }
+        </style>
+    <title>Eventos no DOM</title>
+</head>
+<body>
+
+    <h1> Evento no DOM</h1>
+    <p>Eventos de Mouse usando html</p>
+    <div class = "mouse" id="mouse" onclick = "Clicar(i=a)" onmouseenter="Entrar(i=a)" onmouseleave="Sair(i=a)">
+    Interaja...
+    
+    </div>
+
+    <p>Eventos do Mouse usando EventListner</p>
+    <div id="eMouseL">
+        Interaja
+    </div>w
+
+    <script>
+        var b = window.document.getElementById('eMouseL')
+        var a = window.document.getElementById('mouse')
+       
+        
+
+        b.addEventListener('click', Eclicar);
+        b.addEventListener('mouseenter', Eentrar);
+        b.addEventListener( 'mouseout', Esair);
+
+
+        function Eclicar(){
+            
+            b.innerText = 'Clicou'
+            b.style.background ='green'
+            b.style.color = 'white'
+         }
+
+         function Eentrar(){
+            
+            b.innerText ='Entrou'
+            b.style.background = 'wheat'
+            b.style.color = 'black'
+         }
+
+         function Esair(){
+            
+            b.innerText = 'Saiu'
+            b.style.background = "blue"
+            b.style.color ='wheat'
+            
+         }
+         
+        function Clicar(i){
+            
+           i.innerText = 'Clicou'
+           i.style.background ='green'
+           i.style.color = 'white'
+        }
+        
+        function Entrar(i){
+            i.innerText ='Entrou'
+            i.style.background = 'wheat'
+            i.style.color = 'black'
+            
+        }
+
+        function Sair(i){
+            a.innerText = 'Saiu'
+            a.style.background = "blue"
+            a.style.color ='wheat'
+            
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
