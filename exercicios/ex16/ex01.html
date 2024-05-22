@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contagem incremental</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+        <section>
+            <h2>Progressão aritimética</h2>
+            <div id="numInput">
+                <p>
+                    <label for="inumber">Inicio</label>
+                    <input type="number" id="inumber"   required minlength="1" maxlength="5">
+                </p>
+
+                <p>
+                    <label for="fnumber">Fim</label>
+                    <input type="number" id="fnumber" required minlength="1" maxlength="5">
+                </p>
+
+                <p>
+                    <Label for="pnumber">Passo</Label>
+                    <input type="number" id="pnumber"  required minlength="1"
+                    maxlength="3">
+                </p>
+
+                
+            </div> 
+
+            <div id="numCalc">
+                <p>
+                    <input type="submit" value="Contar" onclick="CalcPA()">
+                </p>
+                preparando contagem
+
+                <p id="scrennumber">
+
+                </p>
+
+            </div>
+        </section>
+    
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
