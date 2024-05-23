@@ -8,17 +8,26 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1> Resolvendo a tabuada</h1>
+    </header>
         <section>
-            <div>
+            <div id="inum">
+                <p>
+                    <label for="inumber"> Número</label>
+                    <input id="inumber" type="number" required minlength="1" maxlength="3" >
+                </p>
 
+                <p><input type="submit" value="Enviar" onclick="Calcular()"></p>
             </div>
 
-            <div>
+            <div id=>
+                <select name="tabuada" id="tabuada" size="10">
+                    <option value="">Digite um número acima</option>
+                </select>
+
 
             </div>
         </section>
-    </header>
     
     <footer>
         <p>&copy; CursoemVideo</p>
